@@ -1,38 +1,128 @@
-.App {
+.vertical-navbar {
+  
+  width: 200px;
+  height: 500px;
+  background-color: #c7222a;
+  padding: 10px;
+  color: white;
+  border: 1px solid white;
+  overflow-y: auto;
+  overflow-x: auto;
+  /* overflow: hidden; */
+}
+
+.horizontal-navbar {
+ 
+  background-color: #c7222a;
+  color: #ffffff;
+  padding: 15px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.center-container {
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  margin-top: -500px;
+
+}
+
+.input-area {
+
+  margin-right: 200px;
+  
+
+}
+
+.input1 {
+
+  height: 250px;
+  width: 250px;
+  margin-left: 250px;
+  vertical-align: top;
+  border: 1px solid black;
+  overflow-y: auto;
+  overflow-x:auto;
+  /* overflow: hidden; */
+}
+
+.input-area input {
+
+  vertical-align: top;
+}
+
+.output-area {
+
+  border: 1px solid black;
+  height: 250px;
+  width: 250px;
+  margin-left: 200px;
+  margin-right: 200px;
+  overflow-y: auto;
+  overflow-x: auto;
+  /* overflow:hidden; */
+}
+
+.button2 {
+  
+  background-color: #c7222a;
   color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  margin-top: 350px;
+  margin-left: -380px;
+  width: 135px;
+  
 }
 
-.App-link {
-  color: #61dafb;
+
+.button1{
+  background-color: #c7222a;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  margin-top: 350px;
+  margin-left: -150px;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover {
+  
+  background-color: #5345a0;
+}
+
+button{
+  width: 120px;
+}
+
+.fas fa-bars {
+
+  margin-left: 10px;
+}
+
+
+img{
+  position: absolute;
+  max-width: 200px;
+  max-height: 200px;
+  margin-left: -585px;
+  margin-top:18px;
+  
+}
+
+.input-area textarea {
+  width: 250px;
+  height: 250px; 
+  resize: none;
+  box-sizing: border-box;
+}
+
+
+.icon{
+
+width: 150px;
+
 }
