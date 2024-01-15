@@ -77,6 +77,10 @@ const App = () => {
     setFlag(true);
   };
 
+  const historyInput = (historyItem)=>{
+
+    setInputText(historyItem);
+  }
   return (
     <div>
       <div>
@@ -94,7 +98,8 @@ const App = () => {
           <div>
             <ul>
               {searchHistory.map((historyItem, index) => (
-                <button className="history" style={{ overflowX: "auto", height: 30, width: 150, marginLeft: -38 }} key={index}>
+                
+                <button onClick={() =>historyInput(historyItem) } className="history" style={{ overflowX: "auto", height: 30, width: 150, marginLeft: -38 }} key={index}>
                   {historyItem}
                 </button>
               ))}
@@ -112,9 +117,9 @@ const App = () => {
             placeholder="Generate brd"
           />
         </div>
-        <button className='button2' onClick={handleSearch}>Generate Brd</button>
+        <button className="button2" onClick={handleSearch}>Generate Brd</button>
         <OutputComponent allOutputs={allOutputs} handleDownload={handleDownload} />
-        <button className='button2' onClick={handleDownload}>Download Output</button>
+        <button className="button2" onClick={handleDownload}>Download Output</button>
       </div>
     </div>
   );

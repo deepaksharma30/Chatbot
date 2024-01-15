@@ -13,7 +13,7 @@ function Login() {
    if(email==="admin"&& password==="admin"){
     navigate("/BRD");
    }
-  };
+  }
 
   return (
     <>
@@ -23,15 +23,15 @@ function Login() {
           <h1> Welcome Back!</h1>
           
         </nav>
-    <div className="main-container" >
+    {/*<div className="main-container" >*/}
       <div className="login-card">
-        <div className="login-card-left">
-        <div className="icon">
-          </div>
+       {/* <div className="login-card-left">*/}
+        {/*<div className="icon">
+          </div>*/}
           {/* <h1 >Welcome to Aditya Birla Capital Family</h1> */}
           {/* <p >You are a few steps away. Login to start your journey with us.</p> */}
           
-        </div>
+        {/*</div>*/}
         <div className="login-card-right">
           <h2 >Login</h2>
           <div className="form-group1">
@@ -63,15 +63,15 @@ function Login() {
               onChange={(e) => setPassword(e.target.value)}
             />
           </div>
-          <div>
-          <button className="login button" type="button" onClick={handleLogin}>Login</button>
+          <div className="button">
+          <button type="button" onClick={handleLogin}>Login</button>
           </div>
           
           
        
         </div>
       </div>
-    </div>
+   {/*} </div>*/}
     <footer className="footer">
         <p>@CopyRight.Login</p>
       </footer>

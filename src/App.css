@@ -78,7 +78,7 @@
 }
 
 
-.button1{
+/*.button1{
   background-color: #c7222a;
   color: white;
   padding: 10px 15px;
@@ -87,14 +87,14 @@
   margin-top: 350px;
   margin-left: -150px;
   
-}
+}*/
 
 button:hover {
   
   background-color: #5345a0;
 }
 
-button{
+.button{
   width: 120px;
 }
 
